@@ -9,7 +9,7 @@ model = genai.GenerativeModel('gemini-pro')
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index')
 
 @app.route('/diagnose', methods=['POST'])
 def diagnose():
